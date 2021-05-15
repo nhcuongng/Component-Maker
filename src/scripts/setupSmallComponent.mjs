@@ -4,11 +4,11 @@ import { validateName } from '../validates.mjs';
 const questions = [
     {
         type: 'input',
-        name: 'childFolderName',
+        name: 'smallComponentName',
         message: 'Your child folder name:',
         default: 'NewComponent',
         // validate: validateName,
     },
 ];
 
-export const setupChildFolder = async () => await inquirer.prompt(questions);
+export const setupSmallComponent = async () => await inquirer.prompt(questions);

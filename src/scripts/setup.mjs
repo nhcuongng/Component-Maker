@@ -1,18 +1,18 @@
 import inquirer from 'inquirer';
-import { validateName } from '../validates.mjs';
+// import { validateName } from '../validates.mjs';
 import { ComponentType } from '../constant.mjs';
 
 const questions = [
     {
         type: 'input',
         name: 'folderDirectory',
-        message: 'Your Component Name:',
-        default: 'NewComponent',
+        message: 'Directory to new Component (includes component name):',
+        default: 'src/components/NewComponet',
         // validate: validateName,
     },
     {
         type: 'list',
-        name: 'folderType',
+        name: 'componentType',
         message: 'What type of Component want?:',
         choices: [ComponentType.small, ComponentType.large],
     },

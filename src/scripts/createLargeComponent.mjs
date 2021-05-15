@@ -1,8 +1,8 @@
 import { mkdirSync, writeFileSync } from 'fs';
 import ora from 'ora';
-import { createIndexFile } from '../createFileContent/index.mjs';
+import { createIndexLargeComponent } from '../createFileContent/index.mjs';
 
-export const createParentFolder = (folderDirectory, childFolderName) => {
+export const createLargeComponent = (folderDirectory, componentName) => {
   const spinner = ora('Writing folder structure...').start();
   spinner.start();
 
@@ -10,15 +10,15 @@ export const createParentFolder = (folderDirectory, childFolderName) => {
     folderDirectory,
       { recursive: true },
       (err) => {
-          if (err) throw err;
+        if (err) throw err;
       }
   );
 
   writeFileSync(
     `${folderDirectory}/index.ts`,
-    createIndexFile(childFolderName)
+    createIndexLargeComponent(componentName)
   )
 
-  spinner.succeed(`${childFolderName} created successfully!`);
+  spinner.succeed(`${componentName} created successfully!`);
 
 }

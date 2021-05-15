@@ -1,2 +1,2 @@
-export * from './parentFolder.mjs';
-export * from './childFolder.mjs';
+export * from './largeComponent.mjs';
+export * from './smallComponent.mjs';

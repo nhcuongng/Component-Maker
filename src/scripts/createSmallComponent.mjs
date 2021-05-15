@@ -1,8 +1,8 @@
 import { mkdirSync, writeFileSync } from 'fs';
 import ora from 'ora';
-import { createIndexChildContent, createScssContent } from '../createFileContent/index.mjs';
+import { createIndexSmallComponent, createScssContent } from '../createFileContent/index.mjs';
 
-export const createChildFolder = (folderDirectory, folderName) => {
+export const createSmallComponent = (folderDirectory, folderName) => {
   const spinner = ora('Writing folder structure...').start();
   spinner.start();
 
@@ -16,7 +16,7 @@ export const createChildFolder = (folderDirectory, folderName) => {
 
   writeFileSync(
     `${folderDirectory}/index.tsx`,
-    createIndexChildContent(folderName)
+    createIndexSmallComponent(folderName)
   )
 
   writeFileSync(

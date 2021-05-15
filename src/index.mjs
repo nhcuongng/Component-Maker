@@ -1,43 +1,46 @@
 #!/usr/bin/env node
 import chalk from 'chalk';
-// import { appendFileSync } from 'fs';
 
 import {
   setup,
-  createParentFolder,
-  createChildFolder,
-  setupChildFolder,
+  createLargeComponent,
+  createSmallComponent,
+  setupSmallComponent,
+  appendExportTheEndOfFile
 } from './scripts/index.mjs';
 
 import { name, ComponentType } from './constant.mjs';
-// import { createIndexFile } from './createFileContent/index.mjs';
 
 (async () => {
 
-  console.log(`\n${chalk.magentaBright(name)}`);
+  console.log(`\n${chalk.magentaBright(name)} - by Mason Nguyen 🦸‍♂️`);
 
   try {
     const {
       folderDirectory,
-      folderType,
+      componentType,
     } = await setup();
 
+    // Get current working dir and file name
     const cwd = process.cwd();
     const absFolderDirectory = `${cwd}/${folderDirectory}`;
-    console.log(absFolderDirectory, 'current')
+    const componentName = folderDirectory.split('/').slice(-1)[0];
 
-    const folderName = folderDirectory.split('/').slice(-1)[0];
-
-    if (folderType === ComponentType.small) {
-      createChildFolder(absFolderDirectory, folderName);
-      // appendFileSync(`../${absFolderDirectory}/index.ts`, createIndexFile(folderName))
+    if (componentType === ComponentType.small) {
+      // Create child component
+      createSmallComponent(absFolderDirectory, componentName);
+      // Write 'export component' child to index.ts
+      appendExportTheEndOfFile(absFolderDirectory, componentName);
       return;
     }
 
-    const { childFolderName } = await setupChildFolder()
-    const childAbsfolderDirectory = `${absFolderDirectory}/${childFolderName}`;
-    createParentFolder(absFolderDirectory, childFolderName);
-    createChildFolder(childAbsfolderDirectory, childFolderName);
+    // Fill name child component
+    const { smallComponentName } = await setupSmallComponent()
+    const childAbsfolderDirectory = `${absFolderDirectory}/${smallComponentName}`;
+    // create large component
+    createLargeComponent(absFolderDirectory, smallComponentName);
+    // create child (small) component
+    createSmallComponent(childAbsfolderDirectory, smallComponentName);
 
   } catch (error) {
     console.error(error.message);
