@@ -1,0 +1,1 @@
+export const createIndexFile = (childFolderName) => `export * from "./${childFolderName}"`;
