@@ -5,7 +5,7 @@ const questions = [
     {
         type: 'input',
         name: 'smallComponentName',
-        message: 'Your child folder name:',
+        message: 'Your child component name:',
         default: 'NewComponent',
         // validate: validateName,
     },
