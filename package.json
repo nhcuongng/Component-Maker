@@ -35,13 +35,13 @@
   ],
   "repository": {
       "type": "git",
-      "url": "https://github.com/nhcuongng/Component-Maker.git"
+      "url": "https://github.com/nhcuongng/component-maker.git"
   },
   "author": "Mason Nguyen",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nhcuongng/Component-Maker/issues"
+    "url": "https://github.com/nhcuongng/component-maker/issues"
   },
   "type": "module",
-  "homepage": "https://github.com/nhcuongng/Component-Maker#readme"
+  "homepage": "https://github.com/nhcuongng/component-maker#readme"
 }
