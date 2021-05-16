@@ -1,10 +1,10 @@
 {
-  "name": "@nhcuong/mk-comp",
+  "name": "@nhcuong/react-component-maker",
   "version": "0.1.0",
-  "description": "create file follow my boilerplate",
+  "description": "create component and folder wrapper follow my boilerplate",
   "main": "lib/index.mjs",
   "bin": {
-    "mkcomp": "lib/index.mjs"
+    "component-maker": "lib/index.mjs"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
