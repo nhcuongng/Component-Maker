@@ -1,7 +1,7 @@
 {
   "name": "@nhcuong/react-component-maker",
-  "version": "0.1.0",
-  "description": "create component and folder wrapper follow my boilerplate",
+  "version": "0.1.4",
+  "description": "create component and folder wrapper follow my conventions",
   "main": "lib/index.mjs",
   "bin": {
     "component-maker": "lib/index.mjs"
@@ -13,7 +13,6 @@
   },
   "dependencies": {
     "chalk": "^4.1.1",
-    "figlet": "^1.5.0",
     "glob": "^7.1.7",
     "inquirer": "^8.0.0",
     "ora": "^5.4.0"
@@ -34,8 +33,8 @@
     "lib"
   ],
   "repository": {
-      "type": "git",
-      "url": "https://github.com/nhcuongng/component-maker.git"
+    "type": "git",
+    "url": "https://github.com/nhcuongng/component-maker.git"
   },
   "author": "Mason Nguyen",
   "license": "MIT",

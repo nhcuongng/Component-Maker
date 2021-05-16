@@ -2,6 +2,10 @@
 
 > For anyone who follow my convention. You can see my convention at [here](https://github.com/nhcuongng/boilerplate-nextjs)
 
+<div align="center" style="margin: 20px 0px">
+  <img alt="React component maker" src="./docs/images/react_component_maker_demo.gif" width="50%" />
+</div>
+
 ## Features 🎉
 
 -   Create a component with **index.ts** and  **.module.scss** file
@@ -14,10 +18,22 @@
 From your terminal run:
 
 ```shell
-# install the package with NPM
+# Run by npx
 $ npx @nhcuong/react-component-maker
-# or install it with YARN
+# Run by Yanr
 $ yarn @nhcuong/react-component-maker
+```
+
+Or you can install it global
+
+```shel
+  npm i -g @nhcuong/react-component-maker
+```
+
+after that you can call it anywhere
+
+```shell
+  component-maker
 ```
 
 ## Sepcific Details
