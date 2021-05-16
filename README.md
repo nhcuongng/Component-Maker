@@ -20,20 +20,20 @@ From your terminal run:
 ```shell
 # Run by npx
 $ npx @nhcuong/react-component-maker
-# Run by Yanr
+# Run by Yarn
 $ yarn @nhcuong/react-component-maker
 ```
 
 Or you can install it global
 
 ```shel
-  npm i -g @nhcuong/react-component-maker
+npm i -g @nhcuong/react-component-maker
 ```
 
 after that you can call it anywhere
 
 ```shell
-  component-maker
+component-maker
 ```
 
 ## Sepcific Details
