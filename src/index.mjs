@@ -3,13 +3,13 @@ import chalk from 'chalk';
 
 import {
   setup,
-  createLargeComponent,
-  createSmallComponent,
-  setupSmallComponent,
+  createFolderWrapper,
+  createComponent,
+  setupComponent,
   appendExportTheEndOfFile
 } from './scripts/index.mjs';
 
-import { name, ComponentType } from './constant.mjs';
+import { name, _CHOICES } from './constant.mjs';
 
 (async () => {
 
@@ -18,7 +18,7 @@ import { name, ComponentType } from './constant.mjs';
   try {
     const {
       folderDirectory,
-      componentType,
+      choiceType,
     } = await setup();
 
     // Get current working dir and file name
@@ -26,21 +26,21 @@ import { name, ComponentType } from './constant.mjs';
     const absFolderDirectory = `${cwd}/${folderDirectory}`;
     const componentName = folderDirectory.split('/').slice(-1)[0];
 
-    if (componentType === ComponentType.small) {
+    if (choiceType === _CHOICES.component) {
       // Create child component
-      createSmallComponent(absFolderDirectory, componentName);
+      createComponent(absFolderDirectory, componentName);
       // Write 'export component' child to index.ts
       appendExportTheEndOfFile(absFolderDirectory, componentName);
       return;
     }
 
     // Fill name child component
-    const { smallComponentName } = await setupSmallComponent()
-    const childAbsfolderDirectory = `${absFolderDirectory}/${smallComponentName}`;
-    // create large component
-    createLargeComponent(absFolderDirectory, smallComponentName);
+    const { componentName: childComponentName } = await setupComponent()
+    const childAbsfolderDirectory = `${absFolderDirectory}/${childComponentName}`;
+    // create folderWrapper component
+    createFolderWrapper(absFolderDirectory, childComponentName);
     // create child (small) component
-    createSmallComponent(childAbsfolderDirectory, smallComponentName);
+    createComponent(childAbsfolderDirectory, childComponentName);
 
   } catch (error) {
     console.error(error.message);

@@ -1,6 +1,10 @@
 export const name = 'Component Maker';
 
-export const ComponentType = {
-  small: 'Small Component',
-  large: 'Large Component'
+export const _CHOICES = {
+  component: 'Component',
+  folderWrapper: 'Folder Wrapper'
+}
+
+export const _DEFAULT = {
+  dir: 'src/components/NewComponent',
 }

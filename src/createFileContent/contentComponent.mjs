@@ -1,4 +1,4 @@
-export const createIndexSmallComponent = (componentName) => (
+export const createIndexFileComponent = (componentName) => (
   `import React from 'react';
 import styles from './${componentName}.module.scss';
 

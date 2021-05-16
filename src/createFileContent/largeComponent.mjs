@@ -1,1 +1,0 @@
-export const createIndexLargeComponent = (componentName) => `export * from './${componentName}';\n`;

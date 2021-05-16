@@ -1,2 +1,2 @@
-export * from './largeComponent.mjs';
-export * from './smallComponent.mjs';
+export * from './contentComponent.mjs';
+export * from './folderWrapper.mjs';

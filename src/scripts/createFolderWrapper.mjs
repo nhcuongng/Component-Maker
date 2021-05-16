@@ -1,8 +1,8 @@
 import { mkdirSync, writeFileSync } from 'fs';
 import ora from 'ora';
-import { createIndexLargeComponent } from '../createFileContent/index.mjs';
+import { createIndexFolderWrapper } from '../createFileContent/index.mjs';
 
-export const createLargeComponent = (folderDirectory, componentName) => {
+export const createFolderWrapper = (folderDirectory, componentName) => {
   const spinner = ora('Writing folder structure...').start();
   spinner.start();
 
@@ -16,9 +16,9 @@ export const createLargeComponent = (folderDirectory, componentName) => {
 
   writeFileSync(
     `${folderDirectory}/index.ts`,
-    createIndexLargeComponent(componentName)
+    createIndexFolderWrapper(componentName)
   )
 
-  spinner.succeed(`${componentName} created successfully!`);
+  spinner.succeed(`Folder wrapper ${folderDirectory.split('/').slice(-1)[0]} created successfully!`);
 
 }
