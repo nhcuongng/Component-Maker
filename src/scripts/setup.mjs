@@ -6,7 +6,7 @@ const questions = [
     {
         type: 'list',
         name: 'choiceType',
-        message: 'What type of Component want?:',
+        message: 'What are you want create?:',
         choices: [_CHOICES.component, _CHOICES.folderWrapper],
     },
     {

@@ -4,8 +4,8 @@
 
 ## Features 🎉
 
--   Create small component with index.tsx and scss module
--   Create large component with small components inside it
+-   Create a component with **index.ts** and  **.module.scss** file
+-   Create a folder wrapper what wrap your components into it with file **index.ts** inside
 -   Content in all files are follow my convention
 
 
@@ -15,14 +15,15 @@ From your terminal run:
 
 ```shell
 # install the package with NPM
-$ npx @nhcuong/mk-comp
+$ npx @nhcuong/react-component-maker
 # or install it with YARN
-$ yarn @nhcuong/mk-comp
+$ yarn @nhcuong/react-component-maker
 ```
 
 ## Sepcific Details
 
-| Directory to your Component Name 	| Relative path to folder (begin from current working folder), you can copy it by use VSCode 	|
-|----------------------------------	|--------------------------------------------------------------------------------------------	|
-| What type of Component want?     	| Small component or Large Component                                                         	|
-| Your child component name        	| Child component inside large component                                                     	|
+| Input field                      	| Description                                                                                	| Default value               	|
+|----------------------------------	|--------------------------------------------------------------------------------------------	|-----------------------------	|
+| What are you want create?         | Component or Folder Wrapper                                                                	| None                        	|
+| Directory to your Component Name 	| Relative path to folder (begin from current working folder), you can copy it by use VSCode 	| src/components/NewComponent 	|
+| Your child component name        	| Child component inside folder wrapper                                                      	| ChildComponent              	|
