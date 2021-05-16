@@ -1,5 +1,10 @@
 # React Component Maker
 
+[![npm version](https://badge.fury.io/js/@nhcuong/react-component-maker.svg)](https://badge.fury.io/js/@nhcuong/react-component-maker)
+![npm](https://img.shields.io/npm/dw/@nhcuong/react-component-maker?style=flat-square)
+![npm bundle size](https://img.shields.io/bundlephobia/min/@nhcuong/react-component-maker?style=flat-square)
+![David (path)](https://img.shields.io/david/nhcuongng/@nhcuong/react-component-maker?style=flat-square)
+
 > For anyone who follow my convention. You can see my convention at [here](https://github.com/nhcuongng/boilerplate-nextjs)
 
 <div align="center" style="margin: 20px 0px">
