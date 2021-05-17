@@ -1,11 +1,11 @@
 # React Component Maker
 
+> For anyone who follow my convention. You can see my convention at [here](https://github.com/nhcuongng/boilerplate-nextjs)
+
 ![npm](https://img.shields.io/npm/v/@nhcuong/react-component-maker)
 ![npm](https://img.shields.io/npm/dw/@nhcuong/react-component-maker?style=flat-square)
 ![David](https://img.shields.io/david/nhcuong/component-maker)
 ![npm bundle size](https://img.shields.io/bundlephobia/min/@nhcuong/react-component-maker?style=flat-square)
-
-> For anyone who follow my convention. You can see my convention at [here](https://github.com/nhcuongng/boilerplate-nextjs)
 
 ![exmple for react compoent maker](https://raw.githubusercontent.com/nhcuongng/component-maker/main/docs/images/react_component_maker_demo.gif)
 
