@@ -1,6 +1,6 @@
 # React Component Maker
 
-> For anyone who follow my convention. You can see my convention at [here](https://github.com/nhcuongng/boilerplate-nextjs)
+For anyone who follow my convention. You can see my convention at [here](https://github.com/nhcuongng/boilerplate-nextjs)
 
 ![npm](https://img.shields.io/npm/v/@nhcuong/react-component-maker)
 ![npm](https://img.shields.io/npm/dw/@nhcuong/react-component-maker?style=flat-square)
