@@ -7,9 +7,7 @@
 
 > For anyone who follow my convention. You can see my convention at [here](https://github.com/nhcuongng/boilerplate-nextjs)
 
-<div align="center" style="margin: 20px 0px">
-  <img alt="React component maker" src="https://raw.githubusercontent.com/nhcuongng/component-maker/main/docs/images/react_component_maker_demo.gif" width="100%" />
-</div>
+![exmple for react compoent maker](https://raw.githubusercontent.com/nhcuongng/component-maker/main/docs/images/react_component_maker_demo.gif)
 
 ## Features 🎉
 
